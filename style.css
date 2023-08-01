@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .cardsBox {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 100vh;
+    margin: 30px;
+  }
+  
+  .card {
+    width: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 5px #B3B3B2;
+  }
+  .upSection,
+  .bottomSection {
+    padding: 0.5rem;
+  }
+  
+  .upSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B3B3B2;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .info p {
+    color: #282829;
+  }
+  small {
+    color: #ffffff;
+  }
+  .icon {
+    max-width: 30px;
+    cursor: pointer;
+  }
+  
+  .bottomSection {
+    background-color: #E5E5E4;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0 0.8rem 0.7rem;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .post p {
+    padding-bottom: 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cardsBox {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 5px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 475px) {
+    .cardsBox {
+      grid-template-columns: 1fr;
+    }
+  }  
+  
+  
+  
+  
+  
